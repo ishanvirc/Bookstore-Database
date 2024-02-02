@@ -1,0 +1,2 @@
+# Bookstore Database
+ This project involves the creation and management of a relational database for a fictional bookstore. It is designed to showcase proficiency in SQL, database schema design, and data manipulation. The project is structured around MySQL, and it includes the creation of various interconnected tables representing different aspects of a typical bookstore, such as books, authors, categories, customers, and orders.
