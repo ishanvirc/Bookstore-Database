@@ -35,7 +35,7 @@ CREATE TABLE bookstore.Orders (
     FOREIGN KEY (BookID) REFERENCES bookstore.Books(BookID)
 );
 
--- author
+-- Author
 INSERT INTO bookstore.Authors (AuthorID, Name, Bio) VALUES (1, 'Dr. Seuss', 'Theodor Seuss Geisel was an American children author and cartoonist. He is known for his work writing and illustrating more than 60 books under the pen name Dr. Seuss');
 INSERT INTO bookstore.Authors (AuthorID, Name, Bio) VALUES (2, 'William Shakespeare', 'William Shakespeare was an English playwright, poet and actor. He is widely regarded as the greatest writer in the English language and the worlds pre-eminent dramatist. He is often called Englands national poet and the "Bard of Avon"');
 INSERT INTO bookstore.Authors (AuthorID, Name, Bio) VALUES (3, 'J.K. Rowling', 'Joanne Rowling CH OBE FRSL, better known by her pen name J. K. Rowling, is a British author and philanthropist. She wrote Harry Potter, a seven-volume fantasy series published from 1997 to 2007');
@@ -49,28 +49,28 @@ INSERT INTO bookstore.Categories (CategoryID, CategoryName) VALUES (3, 'Science 
 INSERT INTO bookstore.Categories (CategoryID, CategoryName) VALUES (4, 'Fantasy');
 
 -- Inserting books for Dr. Seuss (AuthorID = 1)
-INSERT INTO bookstore.Books (BookID, BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (1, 'The Cat in the Hat', 1, 4, 6.99, 30); -- Assuming "Fantasy" Category
-INSERT INTO bookstore.Books (BookID, BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (2, 'Green Eggs and Ham', 1, 4, 5.99, 40); -- Assuming "Fantasy" Category
+INSERT INTO bookstore.Books (BookID, BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (1, 'The Cat in the Hat', 1, 4, 6.99, 30); --  "Fantasy" Category
+INSERT INTO bookstore.Books (BookID, BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (2, 'Green Eggs and Ham', 1, 4, 5.99, 40); -- "Fantasy" Category
 
 -- Inserting books for William Shakespeare (AuthorID = 2)
-INSERT INTO bookstore.Books (BookID, BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (3, 'Hamlet', 2, 1, 9.99, 20); -- Assuming "Fiction" Category
-INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (4, 'Macbeth', 2, 1, 8.99, 25); -- Assuming "Fiction" Category
+INSERT INTO bookstore.Books (BookID, BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (3, 'Hamlet', 2, 1, 9.99, 20); -- "Fiction" Category
+INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (4, 'Macbeth', 2, 1, 8.99, 25); -- "Fiction" Category
 
 -- Inserting books for J.K. Rowling (AuthorID = 3)
-INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (5, 'Harry Potter and the Sorcerer''s Stone', 3, 4, 12.99, 50); -- Assuming "Fantasy" Category
-INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (6, 'Harry Potter and the Chamber of Secrets', 3, 4, 13.99, 50); -- Assuming "Fantasy" Category
+INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (5, 'Harry Potter and the Sorcerer''s Stone', 3, 4, 12.99, 50); -- "Fantasy" Category
+INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (6, 'Harry Potter and the Chamber of Secrets', 3, 4, 13.99, 50); -- "Fantasy" Category
 
 -- Inserting books for Stephen King (AuthorID = 4)
-INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (7, 'The Shining', 4, 3, 15.99, 30); -- Assuming "Science Fiction" Category
-INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (8, 'It', 4, 3, 17.99, 40); -- Assuming "Science Fiction" Category
+INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (7, 'The Shining', 4, 3, 15.99, 30); -- "Science Fiction" Category
+INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (8, 'It', 4, 3, 17.99, 40); -- "Science Fiction" Category
 
 -- Inserting books for Fyodor Dostoevsky (AuthorID = 5)
-INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (9, 'Crime and Punishment', 5, 1, 14.99, 35); -- Assuming "Fiction" Category
-INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (10, 'The Brothers Karamazov', 5, 1, 18.99, 30); -- Assuming "Fiction" Category
+INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (9, 'Crime and Punishment', 5, 1, 14.99, 35); -- "Fiction" Category
+INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (10, 'The Brothers Karamazov', 5, 1, 18.99, 30); -- "Fiction" Category
 
 -- Inserting books for Friedrich Nietzsche (AuthorID = 6)
-INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (11, 'Thus Spoke Zarathustra', 6, 2, 11.99, 25); -- Assuming "Non-Fiction" Category
-INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (12, 'Beyond Good and Evil', 6, 2, 10.99, 20); -- Assuming "Non-Fiction" Category
+INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (11, 'Thus Spoke Zarathustra', 6, 2, 11.99, 25); -- "Non-Fiction" Category
+INSERT INTO bookstore.Books (BookID, Title, AuthorID, CategoryID, Price, StockQuantity) VALUES (12, 'Beyond Good and Evil', 6, 2, 10.99, 20); -- "Non-Fiction" Category
 
 -- Customers 
 INSERT INTO bookstore.Customers (CustomerID, Name, Email, Address) VALUES (1, 'Ishan Choongh', 'cishanvir@gmail.com', '2469 Robson St, Vancouver, Canada');
@@ -81,7 +81,6 @@ INSERT INTO bookstore.Customers (CustomerID, Name, Email, Address) VALUES (5, 'B
 INSERT INTO bookstore.Customers (CustomerID, Name, Email, Address) VALUES (6, 'Carol White', 'carol.white@example.com', '202 Elm St, Oldtown, USA');
 
 -- Sample Orders
--- Assuming CustomerID and BookID start from 1
 INSERT INTO bookstore.Orders (OrderID, CustomerID, BookID, OrderDate, Quantity) VALUES (1, 1, 9, '2024-01-01', 5); -- Ishan Choongh orders BookID 9
 INSERT INTO bookstore.Orders (OrderID, CustomerID, BookID, OrderDate, Quantity) VALUES (2, 2, 1, '2023-04-25', 2); -- John Doe orders BookID 1
 INSERT INTO bookstore.Orders (OrderID, CustomerID, BookID, OrderDate, Quantity) VALUES (3, 2, 3, '2024-11-14', 4); -- John Doe orders 2 copies of BookID 3
